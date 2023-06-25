@@ -99,13 +99,27 @@ a {
     color: #2e2f42;
     padding: 24px 0;
     position: relative;
-    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-item::after {
+#nav-item-index::after {
     content: '';
+    width: 48px;
+    height: 4px;
+    flex-shrink: 0;
     position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
+#nav-item-portfolio::after {
+    content: '';
+    width: 66px;
+    height: 4px;
+    flex-shrink: 0;
     position: absolute;
     left: 0;
     bottom: -1px;
